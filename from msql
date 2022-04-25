@@ -1,6 +1,6 @@
 function myMySQLFetchData()
 {
-var conn = Jdbc.getConnection("jdbc:mysql://sql4.freemysqlhosting.net:3306/sql4488132", "sql4488132", "fxNkJx2e8P");
+var conn = Jdbc.getConnection("jdbc:mysql://hosting:3306/databasename", "user", "password");
 var stmt = conn.createStatement();
 var start = new Date();
 var rs = stmt.executeQuery('SELECT username, name, email, dob FROM bookings GROUP BY 1 LIMIT 1000');
